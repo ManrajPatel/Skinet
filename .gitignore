@@ -3,3 +3,10 @@
 ################################################################################
 
 /API/bin/Debug/netcoreapp3.1
+/API/obj
+/Core/bin/Debug/netstandard2.0
+/Core/obj
+/Infrastructure/bin/Debug/netstandard2.0
+/Infrastructure/obj
+*.db
+/.vs/M_skinet
