@@ -17,7 +17,7 @@ namespace API
     {
         public static async Task Main(string[] args)
         {
-            var host = CreateHostBuilder(args).Build();
+            var host = CreateHostBuilder(args).Build(); //This will call configure services in startup class.
 
             using (var scope = host.Services.CreateScope())
             {
@@ -37,7 +37,7 @@ namespace API
                 }
             }                
 
-            host.Run();
+            host.Run(); //will call Configure method of startup class
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
