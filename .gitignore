@@ -10,3 +10,6 @@
 /Infrastructure/obj
 *.db
 /.vs/M_skinet
+/.vscode/launch.json
+/.vscode/tasks.json
+/.vs
