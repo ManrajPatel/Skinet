@@ -1,5 +1,6 @@
 ﻿using Core.Entities;
-using Microsoft.EntityFrameworkCore.Internal;
+//using Microsoft.EntityFrameworkCore.Internal;
+using System.Linq;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;

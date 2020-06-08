@@ -17,6 +17,7 @@ namespace API.Extensions
         {
             //AddScoped means the lifetime of the repository will be per http request
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             services.Configure<ApiBehaviorOptions>(options =>
