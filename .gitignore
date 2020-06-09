@@ -14,3 +14,4 @@
 /.vscode/tasks.json
 /.vs
 /client/ssl
+dump.rdb
