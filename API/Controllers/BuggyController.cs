@@ -20,7 +20,7 @@ namespace API.Controllers
         }
 
         [HttpGet("testauth")]
-        [Authorize]
+        [Authorize(AuthenticationSchemes = "Bearer")]
         public ActionResult<string> GetSecretText()
         {
             return "Secret stuff";
