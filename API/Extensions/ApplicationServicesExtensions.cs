@@ -17,6 +17,7 @@ namespace API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             //AddScoped means the lifetime of the repository will be per http request
+            services.AddSingleton<IResponseCacheService, ResponseCacheService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IPaymentService, PaymentService>();
